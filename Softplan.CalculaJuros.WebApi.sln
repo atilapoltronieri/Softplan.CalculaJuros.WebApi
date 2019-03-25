@@ -1,0 +1,53 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.489
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Softplan.CalculaJuros.WebApi", "Softplan.CalculaJuros.WebApi\Softplan.CalculaJuros.WebApi.csproj", "{CDB24667-DC93-4D6F-8D67-186DD40DC0B1}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Softplan.CalculaJuros.Services", "Softplan.CalculaJuros.Services\Softplan.CalculaJuros.Services.csproj", "{6E2F2402-13B0-4164-B0F0-7B6F64F67CB1}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Softplan.CalculaJuros.Services.Abstract", "Softplan.CalculaJuros.Services.Abstract\Softplan.CalculaJuros.Services.Abstract.csproj", "{56029CFD-75F6-4755-9C98-47E94F667742}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{81E0BFC3-59B0-4FDD-8E02-62ABA48FCD92}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{322D8771-FFD3-421B-806E-838038966C84}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Softplan.CalculaJuros.Test", "Softplan.CalculaJuros.Test\Softplan.CalculaJuros.Test.csproj", "{95ACCC29-A560-43EC-8F09-DB8B06FC166D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CDB24667-DC93-4D6F-8D67-186DD40DC0B1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CDB24667-DC93-4D6F-8D67-186DD40DC0B1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CDB24667-DC93-4D6F-8D67-186DD40DC0B1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CDB24667-DC93-4D6F-8D67-186DD40DC0B1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6E2F2402-13B0-4164-B0F0-7B6F64F67CB1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6E2F2402-13B0-4164-B0F0-7B6F64F67CB1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6E2F2402-13B0-4164-B0F0-7B6F64F67CB1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6E2F2402-13B0-4164-B0F0-7B6F64F67CB1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{56029CFD-75F6-4755-9C98-47E94F667742}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{56029CFD-75F6-4755-9C98-47E94F667742}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{56029CFD-75F6-4755-9C98-47E94F667742}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{56029CFD-75F6-4755-9C98-47E94F667742}.Release|Any CPU.Build.0 = Release|Any CPU
+		{95ACCC29-A560-43EC-8F09-DB8B06FC166D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{95ACCC29-A560-43EC-8F09-DB8B06FC166D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{95ACCC29-A560-43EC-8F09-DB8B06FC166D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{95ACCC29-A560-43EC-8F09-DB8B06FC166D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{CDB24667-DC93-4D6F-8D67-186DD40DC0B1} = {81E0BFC3-59B0-4FDD-8E02-62ABA48FCD92}
+		{6E2F2402-13B0-4164-B0F0-7B6F64F67CB1} = {81E0BFC3-59B0-4FDD-8E02-62ABA48FCD92}
+		{56029CFD-75F6-4755-9C98-47E94F667742} = {81E0BFC3-59B0-4FDD-8E02-62ABA48FCD92}
+		{95ACCC29-A560-43EC-8F09-DB8B06FC166D} = {322D8771-FFD3-421B-806E-838038966C84}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {BA84E4E5-ED9D-4901-B304-26B1FF9299EC}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,66 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.2</TargetFramework>
+
+    <IsPackable>false</IsPackable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="appsettings.Development.json" />
+    <None Remove="appsettings.json" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="appsettings.Development.json">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="appsettings.json">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="15.9.0" />
+    <PackageReference Include="xunit" Version="2.4.0" />
+    <PackageReference Include="xunit.runner.visualstudio" Version="2.4.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="Cenarios\WebApi\Juros.feature.cs">
+      <Visible>true</Visible>
+      <DependentUpon>%(Filename)</DependentUpon>
+      <DesignTime>true</DesignTime>
+      <AutoGen>true</AutoGen>
+    </Compile>
+  </ItemGroup>
+  
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Diagnostics" Version="2.2.0" />
+	       <PackageReference Include="coverlet.msbuild" Version="2.5.1" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc" Version="2.2.0" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.UserSecrets" Version="2.2.0" />
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="15.9.0" />
+	<PackageReference Include="BoDi" Version="1.4.0-alpha1" />
+	<PackageReference Include="Refit" Version="4.6.58" />
+    <PackageReference Include="System.Net.Http" Version="4.3.4" />
+	<PackageReference Include="SpecFlow" Version="3.0.166-beta" />
+	<PackageReference Include="SpecFlow.Tools.MsBuild.Generation" Version="3.0.166-beta" />
+	<PackageReference Include="SpecFlow.xUnit" Version="3.0.166-beta" />
+	<PackageReference Include="Microsoft.Extensions.Configuration.Json" Version="2.2.0" />
+	<PackageReference Include="FluentAssertions" Version="5.5.1" />
+	<PackageReference Include="Microsoft.Extensions.Configuration" Version="2.2.0" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.EnvironmentVariables" Version="2.2.0" />
+	<PackageReference Include="Microsoft.AspNetCore.TestHost" Version="2.2.0" />
+	        <PackageReference Include="xunit" Version="2.4.0" />
+        <PackageReference Include="xunit.runner.visualstudio" Version="2.4.0" />
+  </ItemGroup>
+  
+  <ItemGroup>
+    <ProjectReference Include="..\Softplan.CalculaJuros.Services.Abstract\Softplan.CalculaJuros.Services.Abstract.csproj" />
+    <ProjectReference Include="..\Softplan.CalculaJuros.Services\Softplan.CalculaJuros.Services.csproj" />
+    <ProjectReference Include="..\Softplan.CalculaJuros.WebApi\Softplan.CalculaJuros.WebApi.csproj" />
+  </ItemGroup>
+
+</Project>

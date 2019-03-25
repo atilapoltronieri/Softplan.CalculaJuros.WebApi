@@ -1,0 +1,24 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.2</TargetFramework>
+    <AspNetCoreHostingModel>InProcess</AspNetCoreHostingModel>
+    <DockerDefaultTargetOS>Windows</DockerDefaultTargetOS>
+    <UserSecretsId>36b92526-d34e-42ca-9218-7362f06ed265</UserSecretsId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.App" />
+    <PackageReference Include="Microsoft.AspNetCore.Razor.Design" Version="2.2.0" PrivateAssets="All" />
+    <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.0.2105168" />
+    <PackageReference Include="MSBuild.SonarQube.Runner.Tool" Version="4.3.1" />
+    <PackageReference Include="SonarQube.Scanner.DotNetCore.Tool" Version="4.3.1" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="5.0.0-beta" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Softplan.CalculaJuros.Services.Abstract\Softplan.CalculaJuros.Services.Abstract.csproj" />
+    <ProjectReference Include="..\Softplan.CalculaJuros.Services\Softplan.CalculaJuros.Services.csproj" />
+  </ItemGroup>
+
+</Project>
